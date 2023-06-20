@@ -4,10 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
-    <meta
-      name="author"
-      content="Sunday Lalbiaknia"
-    />
+    <meta name="author" content="Sunday Lalbiaknia" />
     <meta name="generator" content="Hugo 0.112.5" />
     <title>ACTPRE-2024</title>
 
@@ -17,6 +14,8 @@
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous"
     />
+
+    <link rel="stylesheet" href="assets/styles/main.css" />
     <!-- Favicons -->
 
     <meta name="theme-color" content="#712cf9" />
@@ -49,10 +48,17 @@
       </symbol>
     </svg>
 
-    <div class="actpre-header row my-3 d-none d-lg-flex">
-
+    <div
+      class="actpre-header row my-3 mx-0 d-none d-lg-flex d-xl-flex d-xxl-flex"
+    >
       <div class="actpre-logo col-md-2 align-self-center">
-        <img src="assets/img/Logo_NITMZ.png" alt="ACTPRE 2024" width="120px" height="auto" class="float-end"/>
+        <img
+          src="assets/img/Logo_NITMZ.png"
+          alt="ACTPRE 2024"
+          width="120px"
+          height="auto"
+          class="float-end"
+        />
       </div>
 
       <div class="actpre-title col-md-8 align-self-center">
@@ -67,14 +73,28 @@
       </div>
 
       <div class="actpre-spnsr col-md-2 align-self-center">
-        <img src="assets/img/springer-logo.svg" alt="ACTPRE 2024" width="200px" height="auto" class="float-start"/>
+        <img
+          src="assets/img/springer-logo.svg"
+          alt="ACTPRE 2024"
+          width="200px"
+          height="auto"
+          class="float-start"
+        />
       </div>
-
     </div>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Top navbar</a>
+    <nav class="navbar navbar-expand-md navbar-dark bg-nitmz">
+      <div class="container">
+        <a
+          class="navbar-brand d-none d-md-block d-sm-block d-lg-none d-xl-none d-xxl-none"
+          href="/"
+          ><img
+            src="assets/img/Logo_NITMZ.png"
+            alt="ACTPRE 2024"
+            width="50px"
+            height="auto"
+            class="float-start"
+        /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -88,47 +108,197 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled">Disabled</a>
-            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./">Home</a>
+          </li>
+          <li class="nav-item ">
+              <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" type="button" id="paperDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Call for Papers
+              </a>
+              <div class="dropdown-menu" aria-labelledby="paperDropdown">
+                  <a class="dropdown-item" href="call-for-papers">Main Conference Call for Papers</a>
+                  <a class="dropdown-item" href="call-for-sessions">Special Sessions</a>
+              </div>
+              </div>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="important-dates">Important Dates</a>
+          </li>
+          <li class="nav-item ">
+              <!-- <a class="nav-link" href="committee">Committee</a> -->
+              <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" type="button" id="paperDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Committee
+              </a>
+              <div class="dropdown-menu" aria-labelledby="paperDropdown">
+                  <a class="dropdown-item" href="committee">Committee</a>
+                  <a class="dropdown-item" href="call-for-reviewers">Call for Reviewers/TPC</a>
+              </div>
+          </div></li>
+
+          <li class="nav-item ">
+              <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" type="button" id="authorDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Author Info
+              </a>
+              <div class="dropdown-menu" aria-labelledby="authorDropdown">
+                  <a class="dropdown-item" href="submission-guidelines">Submission Guidelines</a>
+                  <a class="dropdown-item" href="registration">Registration</a>
+                  <!-- <a class="dropdown-item" href="accommodation">Accommodation</a> -->
+              </div>
+              </div>
+          </li>
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="crc">CRC Info</a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="program">Program</a>
+          </li>
+          <li class="nav-item ">
+              <div class="dropdown">
+              <a class="nav-link dropdown-toggle" href="#" type="button" id="authorDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Speakers
+              </a>
+              <div class="dropdown-menu" aria-labelledby="authorDropdown">
+                  <a class="dropdown-item" href="keynote">Keynote Speakers</a>
+                  <a class="dropdown-item" href="invited">Invited Speakers</a>
+                  <!-- <a class="dropdown-item" href="accommodation">Accommodation</a> -->
+              </div>
+              </div>
+          </li>
+          <!-- <li class="nav-item ">
+              <a class="nav-link" href="keynote">Keynote Speakers</a>
+          </li> -->
+          <li class="nav-item ">
+              <a class="nav-link" href="nearby">Nearby Attractions</a>
+          </li>
+          <li class="nav-item ">
+              <a class="nav-link" href="contact">Contact Us</a>
+          </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
 
-    <main class="container">
-      <div class="bg-body-tertiary p-5 rounded">
-        <h1>Navbar example</h1>
-        <p class="lead">
-          This example is a quick exercise to illustrate how the top-aligned
-          navbar works. As you scroll, this navbar remains in its original
-          position and moves with the rest of the page.
-        </p>
-        <a
-          class="btn btn-lg btn-primary"
-          href="/docs/5.3/components/navbar/"
-          role="button"
-          >View navbar docs &raquo;</a
+    <div class="container-fluid px-0">
+      <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="assets/img/slide2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/slide2.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="assets/img/slide2.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="prev"
         >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExample"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
-    </main>
+    </div>
+
+    <div class="container-fluid py-5">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-md-12 about">
+            <h2>About ACTPRE-2024</h2>
+            <p>
+              This conference proposal aims to bring together researchers,
+              engineers, and practitioners from academia and industry to present
+              their recent innovations and research findings on power, renewable
+              energy, and intelligent systems for smart cities. The proposed
+              conference will provide a platform for participants to discuss the
+              challenges and opportunities in developing intelligent systems and
+              renewable energy technologies that can be used in smart cities.
+            </p>
+            <p>
+              The conference will cover a broad range of topics, including but
+              not limited to:
+              <ul>
+                <li>Renewable energy technologies for smart cities, including solar, wind, geothermal, hydro, and biomass. </li>
+                <li>Power systems for smart cities, including microgrids, energy storage, demand response, and distribution systems. </li>
+                <li>Intelligent systems for smart cities, including IoT, AI, machine learning, and big data analytics. </li>
+                <li>Smart city infrastructure and planning, including transportation, buildings, and waste management. </li>
+                <li>Energy-efficient buildings and urban planning for smart cities.</li>
+              </ul>
+              
+            </p>
+
+            <p>
+              The conference will feature keynote speakers, invited talks, paper
+              presentations, and poster sessions. Participants will have the
+              opportunity to interact with researchers and industry experts,
+              exchange ideas, and explore collaboration opportunities. The
+              conference proceedings will be published in Proceedings of
+              Springer book series.
+            </p>
+            <p>
+              Researchers, engineers, and practitioners will submit their
+              original research papers and case studies for review.
+              Interdisciplinary research, and papers that showcase innovations,
+              new technologies, and future directions in the field of power,
+              renewable energy, and intelligent systems for smart cities are
+              also welcomed in this conference.
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid py-5 bg-light">
+      <div class="container-md">
+        <div class="row">
+          <div class="col-md-6 about-nitmz">
+            <h2>About NIT Mizoram</h2>
+            <p>The Ministry of Human Resources Development, Govt. of India vide its order no. F. 23-13-2009-TS-III Dated 30th of Oct. 2009 and 3rd March 2010, had decided to set up ten new NITs. In view of the above National Institute of Technology (NIT) Mizoram was started in the year 2010 in the state of Mizoram with an objective to impart education, research & training leading to B.Tech, M.Tech & PhD. degrees. This institute has been declared as an Institute of National Importance by an Act of Parliament. Here the students are admitted through All India Entrance Exam- Joint Entrance Exam (JEE Main). The Institute has five engineering branches – Civil Engineering, Computer Science & Engineering, Electrical & Electronics Engineering, Electronics & Communication Engineering and Mechanical Engineering. In order to support these engineering branches, there is the department of Basic Sciences & Humanities.</p>
+
+            <p>NIT Mizoram is an Institute situated in the scenic beauty of Mizoram, wrapped between clouds and mountain rocks, which adds to its beauty. Being amongst the most educated states of our country with a literacy rate of 91%, it beholds a very peaceful and calm environment suitable for studies. The Institute, to cope with the present competitive needs, comprises of laboratories with the latest equipment and installed with best and latest softwares which facilitate in pursuing both academic and research objectives. Each department has its own smart classroom and the institute has a full-fledged central library with myriad of text and reference books and e-books. The institute has an Innovation cell and it fosters an environment of Industry-Institute collaboration wherein students are encouraged and supported to undergo multiple internships/trainings in various industries relevant to their disciplines and also aligned to the present job market of India.</p>
+
+            <p>For more information about NIT Mizoram please visit the site: <a href="https://nitmz.ac.in" target="_blank">www.nitmz.ac.in</a></p>
+
+          </div>
+          <div class="col-md-6 align-self-center">
+            <img src="assets/img/nitmz.jpg" alt="NIT Mizoram" class="img-fluid rounded img-thumbnail ">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+          <span class="mb-3 mb-md-0 text-muted">© 2023 NIT Mizoram</span>
+        </div>
+    
+        <div class="col-md-4 justify-content-end d-flex">
+          Developed & Hosted by <a href="#" class="ms-1 text-decoration-none">In-House ERP Team, NIT Mizoram</a>
+        </div>
+      </footer>
+    </div>
+
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"

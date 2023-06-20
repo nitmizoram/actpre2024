@@ -4,3 +4,11 @@ File: Style for ACTPRE-2024
 Author: Sunday Lalbiaknia
 
 */
+
+.bg-nitmz{
+    background-color: #264A83;
+}
+
+.about p,.about-nitmz p{
+    text-align: justify;
+}
